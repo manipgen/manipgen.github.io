@@ -317,16 +317,6 @@
           <div class="column is-full-width">
                 <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>ManipGen solves complex, long-horizon tasks in the real-world entirely zero-shot generalizing across objects, poses, environments and scene configurations</strong></h3>
                 <div class="columns">
-                    <div class="column">
-                        <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/pot.mp4" width="100%" style="border-radius:10px;"></video>
-                        <p style="text-align: center; font-size: 18px">Cook (2 stages): 90%</p>
-                    </div>
-                    <div class="column">
-                        <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/shelf.mp4" width="100%" style="border-radius:10px;"></video>
-                        <p style="text-align: center; font-size: 18px">Replace (4 stages): 80%</p>
-                    </div>
-                </div>
-                <div class="columns">
                   <div class="column">
                     <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/cabinetstore.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">CabinetStore (4 stages): 80%</p>
@@ -335,15 +325,20 @@
                   <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/drawer.mp4" width="100%" style="border-radius:10px;"></video>
                   <p style="text-align: center; font-size: 18px">DrawerStore (6 stages): 60%</p>
               </div>
-              </div>
-              <div class="columns">
+                </div>
+                <div class="columns">
+                  <div class="column">
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/pot.mp4" width="100%" style="border-radius:10px;"></video>
+                    <p style="text-align: center; font-size: 18px">Cook (2 stages): 90%</p>
+                </div>
+                <div class="column">
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/shelf.mp4" width="100%" style="border-radius:10px;"></video>
+                    <p style="text-align: center; font-size: 18px">Replace (4 stages): 80%</p>
+                </div>
                 <div class="column">
                   <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/bins.mp4" width="100%" style="border-radius:10px;"></video>
                   <p style="text-align: center; font-size: 18px">Tidy (8 stages): 60%</p>
               </div>
-              <div class="column">
-                <!-- <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_combined_compressed/bins.mp4" width="100%" style="border-radius:10px;"></video> -->
-                <!-- <p style="text-align: center; font-size: 18px">Tidy (8 stages): 60%</p> -->
             </div>
             </div>
             </div>
@@ -382,28 +377,58 @@
 </section>
 
 <section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+              <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>ManipGen can manipulate objects with entirely unseen geometries</strong></h3>
+              <div class="columns">
+                <div class="column">
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-object-clip.mp4" width="100%" style="border-radius:10px;"></video>
+                    <p style="text-align: center; font-size: 18px">Orange/Black clip</p>
+                </div>
+                <div class="column">
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-object-wire.mp4" width="100%" style="border-radius:10px;"></video>
+                    <p style="text-align: center; font-size: 18px">HDMI cable</p>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-object-plier.mp4" width="100%" style="border-radius:10px;"></video>
+                  <p style="text-align: center; font-size: 18px">Pliers</p>
+              </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/cabinet_tape.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Coffee and biscuit</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
     <div class="container">
         <div class="columns is-centered">
           <div class="column is-full-width">
-                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>ManipGen generalizes to deformable and other out-of-distribution objects</strong></h3>
+                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>ManipGen generalizes to manipulating deformable objects</strong></h3>
                 <div class="columns">
                   <div class="column">
-                      <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/pot_salmon.mp4" width="100%" style="border-radius:10px;"></video>
-                      <p style="text-align: center; font-size: 18px">Salmon</p>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-deformable-papertowel.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Paper towel</p>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/shelf_coffee_biscuit.mp4" width="100%" style="border-radius:10px;"></video>
-                      <p style="text-align: center; font-size: 18px">Coffee and biscuit</p>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-deformable-toy.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Soft toy</p>
                   </div>
                 </div>
                 <div class="columns">
                   <div class="column">
-                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/bins_2.mp4" width="100%" style="border-radius:10px;"></video>
-                    <p style="text-align: center; font-size: 18px">Soft Toys</p>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-deformable-trashbag.mp4" width="100%" style="border-radius:10px;"></video>
+                    <p style="text-align: center; font-size: 18px">Trashbag</p>
                 </div>
                     <div class="column">
-                        <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/cabinet_tape.mp4" width="100%" style="border-radius:10px;"></video>
-                        <p style="text-align: center; font-size: 18px">Tape</p>
+                        <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/shelf_coffee_biscuit.mp4" width="100%" style="border-radius:10px;"></video>
+                        <p style="text-align: center; font-size: 18px">Coffee and biscuit</p>
                   </div>
                 </div>
             </div>
@@ -411,6 +436,89 @@
     </div>
 </section>
 
+<section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+              <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>ManipGen generalizes to unseen manipulation receptacles</strong></h3>
+              <div class="columns">
+                <div class="column">
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-receptacle-bowl.mp4" width="100%" style="border-radius:10px;"></video>
+                    <p style="text-align: center; font-size: 18px">Horizontal dishrack bars under bowl</p>
+                </div>
+                <div class="column">
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-receptacle-corn.mp4" width="100%" style="border-radius:10px;"></video>
+                    <p style="text-align: center; font-size: 18px">Spirals on the stove</p>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/ood-receptacle-pepper.mp4" width="100%" style="border-radius:10px;"></video>
+                  <p style="text-align: center; font-size: 18px">Picking from clutter and circular bowl surface</p>
+              </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/drawer_box_sunscreen.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Horizontal bars under razor box</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+              <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>ManipGen trains local skills at scale in simulation that transfer to the real world</strong></h3>
+              <div class="columns">
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/sim_vids_compressed/pick.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Pick</p>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/sim_vids_compressed/place.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Place</p>
+                  </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/sim_vids_compressed/grasp.mp4" width="100%" style="border-radius:10px;"></video>
+                  <p style="text-align: center; font-size: 18px">Grasp Handle</p>
+              </div>
+              <div class="column">
+                <video class="center" playsinline autoplay loop controls muted src="./resources/sim_vids_compressed/open.mp4" width="100%" style="border-radius:10px;"></video>
+                <p style="text-align: center; font-size: 18px">Open</p>
+            </div>
+            <div class="column">
+              <video class="center" playsinline autoplay loop controls muted src="./resources/sim_vids_compressed/close.mp4" width="100%" style="border-radius:10px;"></video>
+              <p style="text-align: center; font-size: 18px">Close</p>
+            </div>
+          </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+              <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>We train on 3.5K+ objects from UnidexGrasp and 2.5K+ objects from PartNet</strong></h3>
+              <div class="columns">
+                  <div class="column">
+                    <img src="resources/unidexgrasp.png" alt="Image description" width="100%">
+                      <p style="text-align: center; font-size: 18px">UnidexGrasp (pick/place)</p>
+                  </div>
+                  <div class="column">
+                    <img src="resources/partnet.png" alt="Image description" width="100%">
+                    <p style="text-align: center; font-size: 18px">PartNet (grasp handle/open/close)</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 
 <!-- <section class="section">
