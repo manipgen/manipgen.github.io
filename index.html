@@ -79,14 +79,14 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Local Policies Enable Zero-shot Long Horizon Manipulation</h1>
           <div class="is-size-5 publication-authors">
-            <a target="_blank" href="https://mihdalal.github.io/">Murtaza Dalal*</a>&nbsp;&nbsp;&nbsp;
+            <!-- <a target="_blank" href="https://mihdalal.github.io/">Murtaza Dalal*</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://damianliumin.github.io/">Min Liu*</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.linkedin.com/in/walter-talbott-678b8aa8/">Walter Talbott</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.linkedin.com/in/chen90/">Chen Chen</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.linkedin.com/in/jianzhangpurdue/">Jian Zhang</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>&nbsp;&nbsp;&nbsp;
-                <br><br>
+                <br><br> -->
               <!-- <img src="./resources/cmu-wordmark-horizontal-r.png" width="30%"></img> -->
             </span>
           </div>
@@ -96,12 +96,12 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <!-- <a target="_blank" href="resources/additional_details.pdf" -->
-                <a target="_blank" href="resources/"
+                <a target="_blank" href="resources/paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Additional Details</span>
+                  <span>Paper</span>
                 </a>
               </span>
 
@@ -398,7 +398,7 @@
               </div>
                   <div class="column">
                       <video class="center" playsinline autoplay loop controls muted src="./resources/task_vids_processed_compressed/cabinet_tape.mp4" width="100%" style="border-radius:10px;"></video>
-                      <p style="text-align: center; font-size: 18px">Coffee and biscuit</p>
+                      <p style="text-align: center; font-size: 18px">Scotch tape</p>
                 </div>
               </div>
           </div>
@@ -515,6 +515,44 @@
                     <p style="text-align: center; font-size: 18px">PartNet (grasp handle/open/close)</p>
                   </div>
               </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+              <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Failure Cases (4x speed)</strong></h3>
+              <div class="columns">
+                  <div class="column">
+                    <h2 class="subtitle">
+                      Current VLMs are not always good at spatial/physical reasoning. Here GPT-4o predicts the incorrect plan ordering which results in a failure: predicting <b>pick</b> then <b>open</b> instead of <b>open</b> then <b>pick</b>. &#10;&#13;
+                    </h2>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/failure_vids_compressed/vlm_bad_plan.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+                  <div class="column">
+                    <h2 class="subtitle">
+                      Existing openset detection methods can be brittle when given challenging prompts (from the VLM). Grounded SAM segments the tray instead of the spice box due to a failure in Grounding Dino.
+                    </h2>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/failure_vids_compressed/vlm_detection.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <h2 class="subtitle">
+                   In some rare cases, especially with more oblong objects, perception/motion planning failures cause Neural MP to collide with the environment when executing, dropping the object. &#10;&#13;
+                  </h2>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/failure_vids_compressed/mp_collision_4x.mp4" width="100%" style="border-radius:10px;"></video>
+                </div>
+                <div class="column">
+                  <h2 class="subtitle">
+                    While our policies are trained to handle moderates amount of clutter, tightly packed clutter is still a challenge for <b>pick</b>. Here a local policy grasp failure results in task failure.
+                  </h2>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/failure_vids_compressed/local_policy_extreme_clutter.mp4" width="100%" style="border-radius:10px;"></video>
+                </div>
+            </div>
           </div>
       </div>
   </div>

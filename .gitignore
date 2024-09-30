@@ -3,3 +3,5 @@ resources/task vids combined/
 resources/task vids processed/
 resources/task vids/
 resources/task_vids_fast/
+resources/failure_vids/
+resources/failure_vids_processed/
